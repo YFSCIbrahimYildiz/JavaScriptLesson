@@ -43,3 +43,36 @@ console.log(typeof successfull);
 let age;
 console.log(age);
 console.log(typeof age);
+//quiz
+/*Sorular
+1) iki öğrenciye bilgileri değişkenler içerisinde saklayınız,
+2) öğrencilerin yaş bilgilerini değişkende saklayınız,
+3) öğrencilerin ders not ortalamalarını değişkende saklayınız,
+4) öğrencilerin 50 geçme notuna göre başarı durumlarını değişkende saklayınız
+*/
+//Birinci soru
+var student1="ada bilgi";
+var birthDateA=2012;
+var mathPointA1=70;
+var mathPointA2=70;
+var mathPointA3=80;
+
+var student2="yiğit bilgi";
+var birthDateY=2010;
+var mathPointY1=40;
+var mathPointY2=40;
+var mathPointY3=50;
+//ikinci soru
+var studentbirthdate1=2024-2012;
+var studentbirthdate2=2024-2010;
+// Üçüncü soru
+
+var student1Average=(mathPointA1+mathPointA2+mathPointA3)/3;
+var student2Average=(mathPointY1+mathPointY2+mathPointY3)/3;
+//dördüncü soru
+
+
+statu1=(student1Average>=50);
+statu2=(student2Average>=50);
+console.log(statu1);
+console.log(statu2);
