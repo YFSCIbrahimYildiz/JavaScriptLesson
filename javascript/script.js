@@ -1,4 +1,4 @@
-//ilk ders//
+/*//ilk ders//
 //değişkenler
 
 console.log(7000+(7000*0.3))//+%30 zam
@@ -42,7 +42,7 @@ console.log(typeof successfull);
 
 let age;
 console.log(age);
-console.log(typeof age);
+console.log(typeof age);*/
 //quiz
 /*Sorular
 1) iki öğrenciye bilgileri değişkenler içerisinde saklayınız,
@@ -51,6 +51,7 @@ console.log(typeof age);
 4) öğrencilerin 50 geçme notuna göre başarı durumlarını değişkende saklayınız
 */
 //Birinci soru
+/*
 var student1="ada bilgi";
 var birthDateA=2012;
 var mathPointA1=70;
@@ -76,3 +77,39 @@ statu1=(student1Average>=50);
 statu2=(student2Average>=50);
 console.log(statu1);
 console.log(statu2);
+
+
+//string
+
+1) url kaç karakter?
+2)kursAdi kaç kelimeden oluşmaktadır?
+3)url https ile mi başlıyor?
+4)kursAdi içerisinde Eğitimi kelimesi var mı?
+5)url ve kursAdi değişkenlerini kullanarak aşağıdaki string metni oluşturunuz.
+    a)https://www.scarlettrose.com.tr/komple-web-geliştirme-kursu
+*/
+let url="https://www.scarlettrose.com.tr/";
+let kursAdi="Komple Web Geliştirme Kursu";
+//1. soru
+let str=url.length;
+console.log(str);
+// 2.soru
+let wordC= kursAdi.split("").length;
+console.log(wordC);
+//3. soru
+let withStart=url.startsWith("https://");
+if(withStart==true){console.log("evet");}
+else{console.log("hayır");}
+
+//4.soru
+let inOf=kursAdi.indexOf("Eğitimi");
+if(inOf>-1){console.log("Evet var");}
+else{console.log("yok");}
+
+//5.soru
+
+let newText=(url+kursAdi.trim()).toLocaleLowerCase();
+let newText1=newText.replaceAll(" ","-");
+//newText.replaceAll(" ","-");
+
+console.log(newText1);
