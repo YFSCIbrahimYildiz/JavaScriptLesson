@@ -120,6 +120,7 @@ console.log(newText1);
 let lArray=["Elma","Armut","Muz","Çilek"];
 
 //2) Dizi kaç elemanlı?
+/*
 let length= lArray.length;
 console.log(length);
 
@@ -174,4 +175,222 @@ console.log(yigitnot.toFixed(2));
 console.log(adanot.toFixed(2));
 console.log(ahmetnot.toFixed(2));
 
+*/
 
+//Objects
+
+//1) Sipariş bilgilerini object içerisinde saklayınız
+/*
+let order={
+    "orderID":"101",
+    "orderDate":"31.12.2023",
+    "paymentType":"Credit Cart",
+    "orderAdress":"Karaağaç Mah. Isparta/Merkez",
+    "orderProduct1":{
+        "productID":"5",
+        "productName":"Asus TUF GAMING A15",
+        "url":"https://www.asus.com/tr/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-a15-2024/",
+        "productSeller":"53000"
+    },
+    "orderProduct2":{
+        "productID":"6",
+        "productName":"ASUS TUF GAMING A14",
+        "url":"https://www.asus.com/tr/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-a14-2024/",
+        "productSeller":"65000"
+    },
+    "customerID": 12,
+    "vendor":{
+        "vendorID":"12",
+        "vendorName":"ASUS TÜRKİYE"
+    },
+
+    "orderID":"102",
+    "orderDate":"31.12.2023",
+    "paymentType":"Credit Cart",
+    "orderAdress":"Karaağaç Mah. Isparta/Merkez",
+    "orderProduct3":{
+        "productID":"6",
+        "productName":"ASUS TUF GAMING A14",
+        "url":"https://www.asus.com/tr/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-a14-2024/",
+        "productSeller":"65000"
+    },
+    "   ":{
+        "productID":"7",
+        "productName":"ROG Strix G16",
+        "url":"https://rog.asus.com/tr/laptops/rog-strix/rog-strix-g16-2024/",
+        "productSeller":"65000"
+    },
+    "customerID": 12,
+    "vendor":{
+        "vendorID":"12",
+        "vendorName":"ASUS TÜRKİYE"
+    },
+
+    
+}
+let total,seller1,seller2,seller3,seller4;
+
+seller1=order.orderProduct1.productSeller;
+seller2.order.orderProduct2.productSeller;
+seller3=order.orderProduct3.orderProduct3;
+seller4=order.orderProduct4.productSeller;
+
+total=seller1+seller2+seller3+seller4;*/
+
+//loop
+/*
+let square=0;
+let numbers=[1,5,7,15,3,25,2,10,20,30];
+
+//1) numbers listesindeki her bir elemanın karesini yazdırınız
+
+for(let i=0; i<numbers.length;i++){
+
+    square=(Number(numbers[i])*Number(numbers[i]));
+    console.log(square);
+    
+}
+
+let conclusion=0;
+//2)numbers listesindeki hangi sayılar 5 in katıdır.
+
+for(let s=0;s<numbers.length;s++){
+    conclusion=(Number(numbers[s])%5);
+    if(conclusion==0){
+        console.log(numbers[s]+" sayısı 5'in katıdır.");
+    }
+}
+
+//3)numbers listesindeki çift sayıların toplamını bulunuz
+let conclusion1=0;
+let number11;
+for(a=0;a<numbers.length;a++){
+    number11=(Number(numbers[a]))%2;
+    if(number11==0){
+        conclusion1+=Number(numbers[a]);
+        
+    }
+    
+
+}
+console.log(conclusion1);
+
+//4) product listesindeki ürünleri büyük harf yazdırınız.
+let product11=["iphone 12","samsung s22","iphone 13","samsung s23"];
+let newProduct;
+for(y=0;y<product11.length;y++){
+    newProduct=product11[y].toUpperCase();
+    console.log(newProduct);
+}
+
+
+//5) product listesinde samsung geçen kaç ürün var?
+let statu;
+let conclusion2=0;
+for(i=0;i<product11.length;i++){
+    statu=product11[i].indexOf("samsung")+1;
+    //console.log(statu);
+    if(statu>0){
+        conclusion2+=1;
+
+    }
+}
+console.log("Samsung markalı ürün "+ conclusion2+" adettir.");
+
+
+//6) student listesindeki her öğrencinin not ortalamasını ve başarı durumlarını yazdırınız,
+*/
+/*
+let students111=[
+    {"name":"yiğit","surname":"bilgi","notlar": [60,70,80]},
+    {"name":"ada","surname":"bilgi","notlar": [80,70,80]},
+    {"name":"cinar","surname":"turan","notlar": [70,70,60]}
+];
+
+let typeNot=students111.notlar;
+console.log(typeof typeNot);
+
+
+
+{"ad":"arif","soyad":"YILDIZ","nots":[80,70,80]},
+    {"ad":"Adnan","soyad":"YILDIZ","nots":[70,70,60]}
+*/
+
+
+
+
+let st1={
+    "ad":"ibrahim","soyad":"YILDIZ","notss":[60,70,80]
+};
+
+let st2={
+
+    "ad":"Arif","soyad":"YILDIZ","notss":[80,70,80]
+};
+let st3={
+
+    "ad":"adnan","soyad":"YILDIZ","notss":[70,70,60]
+};
+let strn1=0,strn2=0,strn3=0,stt1=0,stt2=0,stt3=0;
+for(i=0; i<st1.notss.length;i++){
+    strn1+=st1.notss[i];
+}
+for(i=0; i<st1.notss.length;i++){
+    strn2+=st2.notss[i];
+}
+for(i=0; i<st3.notss.length;i++){
+    strn3+=st3.notss[i];
+}
+stt1=strn1/3;
+stt2=strn2/3;
+stt3=strn3/3;
+
+if(stt1>=50){
+    console.log(`${st1.ad}, ${stt2} ortalamayla dersi başarıyla geçti`);
+
+}
+else{
+    console.log(`${st1.ad} dersi geçemedi`);
+}
+
+if(stt2>=50){
+    console.log(`${st2.ad}, ${stt2} ortalamayla dersi başarıyla geçti`);
+}
+else{
+    console.log(`${st2.ad} dersi geçemedi`);
+}
+if(stt3>=50){
+    console.log(`${st3.ad}, ${stt3} ortalamayla dersi başarıyla geçti`);
+}
+else{
+    console.log(`${st3.ad}, ${stt3} dersi geçemedi`);
+}
+/*
+let product11=["iphone 12","samsung s22","iphone 13","samsung s23"];
+
+
+console.log(typeof Number(st1.nots));
+console.log(Number(st1.nots));
+console.log(typeof st1.ad+"dd");
+*/
+
+/*
+for(let studentint of students111){
+    let total=0;
+    let average=0;
+    let adet=0;
+
+    for(let point11 of students111.notlar){
+        total+= point11;
+        adet++;
+
+    }
+    average=total/adet;
+    console.log(`${students111.name} ${students111.surname} isimli öğrencinin not ortalaması ${average}.`);
+    if(average>=50){
+        console.log("Başarılı");
+    }
+    else{
+        console.log("Başarısız");
+    }
+}*/
