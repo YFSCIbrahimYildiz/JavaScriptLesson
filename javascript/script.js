@@ -317,7 +317,7 @@ console.log(typeof typeNot);
 */
 
 
-
+/*
 
 let st1={
     "ad":"ibrahim","soyad":"YILDIZ","notss":[60,70,80]
@@ -365,6 +365,7 @@ if(stt3>=50){
 else{
     console.log(`${st3.ad}, ${stt3} dersi geçemedi`);
 }
+*/
 /*
 let product11=["iphone 12","samsung s22","iphone 13","samsung s23"];
 
@@ -394,3 +395,73 @@ for(let studentint of students111){
         console.log("Başarısız");
     }
 }*/
+
+
+//function
+
+//1- Kendisine gönderilen kelimeyi belirten kez ekranda yazan fonksiyon oluşturunuz
+/*
+function soru1(kelime, adet){
+    for(let i=0;i<adet;i++){
+        console.log(`${i}. ${kelime}`);
+    }
+}
+
+
+soru1("Başla",50);
+*/
+//2- Dikdörtgen alan ve çevresini hesaplayan fonksiyon yazınız
+/*
+function alancevre(a,b){
+    let alan=a*b;
+    let cevre= 2*(a+b);
+
+    console.log(`Dikdörtgenin alanı= ${alan}. Dikdörtgenin çevresi= ${cevre}.`);
+}
+
+alancevre(5,20);
+
+*/
+/*
+function yazitura(){
+    let tura,yazi,randomsayi;
+
+    randomsayi=Math.random()*2;
+    if(randomsayi<1){
+        console.log(`Tura  ${randomsayi}`);
+    }
+    else{console.log(`Yazı  ${randomsayi}`);}
+
+}
+yazitura();
+
+*/
+
+//kendisine gönderilen sayının tam bölenlerini dizi şeklinde yazdıran fonksiyon yazınız
+/*
+function sayidonduren(a){
+    let sayi=[];
+    for(let i=0;i<=a;i++){
+        if(a%i==0){
+            sayi.push(i);
+        }
+    }
+    console.log(sayi);
+}
+
+sayidonduren(60);
+
+*/
+//değişken sayıda parametre alan toplam isminde bir fonksiyon oluşturunuz
+
+function toplam(){
+    let degiskenparametre=0;
+    for(let i=0;i<arguments.length;i++){
+        degiskenparametre+=arguments[i];
+        
+    }
+
+    console.log(degiskenparametre);
+}
+
+toplam(5,5,6,8);
